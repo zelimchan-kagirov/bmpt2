@@ -1,0 +1,170 @@
+.subscription-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 89%;
+  margin: auto;
+  margin-bottom: 250px;
+}
+
+.subscription-plan .offer-card {
+  width: 31.3%;
+  padding: 53px 26px;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 0px 8px 30px 3px rgba(64, 65, 69, 0.24);
+          box-shadow: 0px 8px 30px 3px rgba(64, 65, 69, 0.24);
+  border-radius: 5px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.subscription-plan .offer-card > span {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  display: block;
+  margin-bottom: 12px;
+  color: #282f39;
+}
+
+.subscription-plan .premium {
+  -webkit-box-shadow: 0px 8px 30px 3px rgba(2, 71, 147, 0.42);
+          box-shadow: 0px 8px 30px 3px rgba(2, 71, 147, 0.42);
+}
+
+.subscription-plan .status {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 28px;
+}
+
+.subscription-plan .free {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 100px;
+  margin-bottom: 30px;
+}
+
+.subscription-plan .cost {
+  position: relative;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  margin-bottom: 30px;
+}
+
+.subscription-plan .cost sup {
+  font-size: 20px;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.subscription-plan .cost .euro {
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.subscription-plan .cost .per-month {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.subscription-plan hr {
+  background-color: #e2e2e2;
+  border: none;
+  height: 1px;
+  margin-bottom: 43px;
+}
+
+.subscription-plan .offer-description {
+  text-align: left;
+}
+
+.subscription-plan ul {
+  list-style: none;
+}
+
+.subscription-plan ul p {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  line-height: 30px;
+}
+
+.subscription-plan ul li {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1140px) {
+  .subscription-plan .status {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .subscription-plan .free {
+    font-size: 35px;
+    line-height: 15px;
+  }
+  .subscription-plan .cost {
+    font-size: 80px;
+    line-height: 40px;
+  }
+  .subscription-plan .cost sup {
+    top: -30px;
+  }
+  .subscription-plan .cost .euro {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .subscription-plan .cost .per-month {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .subscription-plan .offer-card > span {
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .subscription-plan hr {
+    margin-bottom: 34px;
+  }
+  .subscription-plan ul p,
+  .subscription-plan ul li {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 955px) {
+  .subscription-plan {
+    margin-bottom: 60px;
+  }
+  .subscription-plan .offer-card {
+    padding: 43px 15px;
+  }
+}
+
+@media (max-width: 865px) {
+  .subscription-plan {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscription-plan .offer-card {
+    width: 295px;
+    margin-bottom: 60px;
+  }
+}
+/*# sourceMappingURL=subscription-plan.css.map */

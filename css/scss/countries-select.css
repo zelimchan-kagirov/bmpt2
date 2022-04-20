@@ -1,0 +1,116 @@
+.select-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.select-part .select-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.select-part .select-settings .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-part .select-settings .labels p {
+  width: 167px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.select-part .sort-box {
+  margin-right: 15px;
+}
+
+.select-part .sort-box:last-child {
+  margin-right: 0;
+}
+
+.select-part .sort-box p {
+  margin-bottom: 10px;
+}
+
+.select-part .range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.select-part .category {
+  border: 1px solid #dddddd;
+}
+
+.select-part .from {
+  width: 97px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid #dddddd;
+  border-right: 0.5px solid #dddddd;
+}
+
+.select-part .to {
+  width: 97px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #dddddd;
+  border-left: none;
+}
+
+.countries-cities {
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  padding: 0 !important;
+}
+
+.countries-cities .select-box {
+  max-width: 167px !important;
+  min-width: 95px !important;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.countries-cities .select-box svg {
+  background: white !important;
+  width: 10px !important;
+  padding: 0 !important;
+  margin-right: 5px !important;
+}
+
+.vue-input {
+  height: 38px !important;
+}
+
+.icon.arrow-downward {
+  border-color: black transparent transparent !important;
+}
+
+.vue-dropdown-item.highlighted {
+  background-color: #c9c8c8 !important;
+}
+
+@media (max-width: 414px) {
+  .countries-cities {
+    overflow: hidden !important;
+  }
+  .countries-cities .select-box {
+    max-width: 40% !important;
+  }
+  .labels p {
+    width: 40% !important;
+    margin-right: 15px;
+  }
+}
+/*# sourceMappingURL=countries-select.css.map */

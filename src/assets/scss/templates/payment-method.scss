@@ -1,0 +1,198 @@
+.methods {
+  width: 70%;
+  margin: auto;
+  margin-top: 90px;
+}
+.regist-page_method {
+  width: 90%;
+}
+.top,
+.bottom {
+  display: flex;
+  align-items: center;
+}
+.top {
+  justify-content: space-around;
+  margin-bottom: 36px;
+}
+.bottom {
+  justify-content: space-between;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+.method-card {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.top .method-card {
+  text-align: center;
+  font-size: 15px;
+  line-height: 17px;
+  color: #999999;
+}
+.method-card p {
+  margin-top: 6px;
+}
+.bottom .method-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 22%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  color: #5f95ff;
+  cursor: pointer;
+}
+.coupon {
+  text-align: center;
+  display: flex;
+}
+.coupon input {
+  width: 50%;
+}
+.coupon-btn {
+  border-radius: 5px;
+  padding: 15px 48px;
+  border: none;
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 27px;
+}
+.no-cupon {
+  background: #5f95ff;
+}
+.with-cupon {
+  background: #7cca57;
+}
+/* Thanks window  */
+.thanks-window {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-image: linear-gradient(#ffffff, #e3e9ed);
+}
+.thanks-message {
+  background: #f9f9f9;
+  border-radius: 15px;
+  filter: drop-shadow(0px 0px 40px #d1e2ff);
+  width: 620px;
+  // width: 43%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  color: #999999;
+}
+.message-content {
+  width: 60%;
+  margin: auto;
+  padding: 60px 0;
+  img {
+    width: 136px;
+  }
+}
+.thanks-words {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 57px;
+  color: #404145;
+  margin: 50px 0 40px;
+}
+.backTo-btn {
+  display: inline-block;
+  background: #5f95ff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 9px 42px;
+  margin-top: 42px;
+}
+@media (max-width: 1195px) {
+  .method-card img {
+    width: 80%;
+  }
+}
+@media (max-width: 940px) {
+  .method-card img {
+    width: 100%;
+  }
+  .thanks-message {
+    width: 70%;
+  }
+  .message-content {
+    width: 70%;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .top .method-card {
+    width: 45%;
+    align-self: flex-start;
+    font-size: 10px;
+    line-height: 11px;
+  }
+  .bottom .method-card {
+    width: 45%;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  .bottom .method-card img {
+    width: 70%;
+  }
+  .message-content {
+    width: 80%;
+  }
+  .thanks-message {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .thanks-words {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 590px) {
+  .coupon {
+    flex-direction: column;
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .coupon-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .methods {
+    width: 90%;
+    margin-top: 0;
+  }
+  .message-content img {
+    width: 50%;
+  }
+  .thanks-words {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .thanks-message,
+  .backTo-btn {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}

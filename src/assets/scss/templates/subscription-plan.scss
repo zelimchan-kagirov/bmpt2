@@ -1,0 +1,148 @@
+.subscription-plan {
+  display: flex;
+  justify-content: space-between;
+  width: 89%;
+  margin: auto;
+  margin-bottom: 250px;
+  .offer-card {
+    width: 31.3%;
+    padding: 53px 26px;
+    background-color: #fbfbfb;
+    box-shadow: 0px 8px 30px 3px rgba(64, 65, 69, 0.24);
+    border-radius: 5px;
+    height: fit-content;
+    & > span {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 17px;
+      display: block;
+      margin-bottom: 12px;
+      color: #282f39;
+    }
+  }
+  .premium {
+    box-shadow: 0px 8px 30px 3px rgba(2, 71, 147, 0.42);
+  }
+  .status {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 28px;
+  }
+  .free {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100px;
+    margin-bottom: 30px;
+  }
+  .cost {
+    position: relative;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 30px;
+
+    sup {
+      font-size: 20px;
+      line-height: 50px;
+      position: absolute;
+      top: 0;
+    }
+
+    .euro {
+      font-size: 45px;
+      line-height: 52px;
+    }
+    .per-month {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  hr {
+    background-color: #e2e2e2;
+    border: none;
+    height: 1px;
+    margin-bottom: 43px;
+  }
+
+  .offer-description {
+    text-align: left;
+  }
+  ul {
+    list-style: none;
+    p {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 30px;
+      line-height: 30px;
+    }
+    li {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: 1140px) {
+  .subscription-plan {
+    .status {
+      font-size: 15px;
+      line-height: 15px;
+    }
+    .free {
+      font-size: 35px;
+      line-height: 15px;
+    }
+    .cost {
+      font-size: 80px;
+      line-height: 40px;
+      sup {
+        top: -30px;
+      }
+      .euro {
+        font-size: 35px;
+        line-height: 40px;
+      }
+      .per-month {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+    .offer-card {
+      & > span {
+        font-size: 10px;
+        line-height: 11px;
+      }
+    }
+    hr {
+      margin-bottom: 34px;
+    }
+    ul {
+      p,
+      li {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+@media (max-width: 955px) {
+  .subscription-plan {
+    margin-bottom: 60px;
+    .offer-card {
+      padding: 43px 15px;
+    }
+  }
+}
+@media (max-width: 865px) {
+  .subscription-plan {
+    flex-direction: column;
+    align-items: center;
+    .offer-card {
+      width: 295px;
+      margin-bottom: 60px;
+    }
+  }
+}

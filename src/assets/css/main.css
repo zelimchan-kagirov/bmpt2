@@ -1,0 +1,181 @@
+@import url(../../../node_modules/vue-next-select/dist/index.min.css);
+@font-face {
+  font-family: "Helvetica";
+  src: url("/src/assets/fonts/hetvetica-regular.eot");
+  src: url("/src/assets/fonts/hetvetica-regular.eot"),
+    url("/src/assets/fonts/hetvetica-regular.woff") format("woff"),
+    url("/src/assets/fonts/hetvetica-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/src/assets/fonts/hetvetica-700.eot");
+  src: url("/src/assets/fonts/hetvetica-700.eot"),
+    url("/src/assets/fonts/hetvetica-700.woff") format("woff"),
+    url("/src/assets/fonts/hetvetica-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+body {
+  color: #404145;
+  font-size: 18px;
+  line-height: 30px;
+}
+main {
+  width: 100vw;
+  height: 693px;
+  /* height: 755px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 190px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a.blue-link {
+  color: #0a2dba;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+img {
+  object-fit: cover;
+}
+.container {
+  width: 80%;
+  max-width: 1150px;
+  margin: auto;
+}
+select {
+  background-color: #ffffff;
+  -webkit-appearance: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.main-context {
+  position: relative;
+  top: 45%; /* was 40%*/
+  transform: translateY(-50%);
+}
+.main-text {
+  width: 58%;
+  color: #ffffff;
+}
+.main-header {
+  font-size: 45px;
+  font-weight: 700;
+  width: 60%;
+  line-height: 52px;
+  color: #ffffff;
+}
+.main-subheader {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  max-width: 270px;
+  margin-bottom: 21px;
+}
+.gradient-hr {
+  border: none;
+  width: 166px;
+  height: 3px;
+  background: linear-gradient(90deg, #000000 49%, #dedede 49%);
+  margin-bottom: 21px;
+}
+.bold {
+  font-weight: 700;
+}
+.section-heading {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  margin-bottom: 14px;
+}
+
+/* star rating  */
+.vue3-star-ratings__wrapper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+@media (max-width: 900px) {
+  .main-text {
+    width: 100%;
+  }
+  .main-header,
+  .main-subheader {
+    width: 90% !important;
+    margin: auto;
+    margin-bottom: 21px;
+  }
+  .search-header,
+  .search-subheader {
+    text-align: center;
+  }
+  .main-subheader {
+    max-width: none !important;
+  }
+}
+@media (max-width: 680px) {
+  main {
+    margin-bottom: 150px;
+  }
+  .container {
+    width: 100vw;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .section-heading,
+  .section-heading span {
+    font-size: 20px !important;
+    line-height: 23px !important;
+  }
+  main {
+    background-position: center;
+    /* margin-bottom: 30px; */
+  }
+  .main-header {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .main-subheader {
+    font-size: 16px;
+  }
+  .gradient-hr {
+    width: 80px;
+  }
+  .world-pic {
+    height: 150px !important;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    margin-bottom: 90px;
+  }
+}

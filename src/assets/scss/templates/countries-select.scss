@@ -1,0 +1,92 @@
+.select-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  .select-settings {
+    display: flex;
+    flex-wrap: wrap;
+
+    .labels {
+      display: flex;
+      & p {
+        width: 167px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .sort-box {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+  .range {
+    display: flex;
+    // align-self: end;
+  }
+  .category {
+    border: 1px solid #dddddd;
+  }
+  .from {
+    width: 97px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #dddddd;
+    border-right: 0.5px solid #dddddd;
+  }
+  .to {
+    width: 97px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #dddddd;
+    border-left: none;
+  }
+}
+//Select countries package
+.countries-cities {
+  justify-content: left !important;
+  padding: 0 !important;
+  .select-box {
+    max-width: 167px !important ;
+    min-width: 95px !important ;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-right: 15px;
+    svg {
+      background: white !important;
+      width: 10px !important;
+      padding: 0 !important;
+      margin-right: 5px !important;
+    }
+  }
+}
+
+.vue-input {
+  height: 38px !important;
+}
+.icon.arrow-downward {
+  border-color: black transparent transparent !important ;
+}
+.vue-dropdown-item.highlighted {
+  background-color: rgb(201, 200, 200) !important;
+}
+
+@media (max-width: 414px) {
+  .countries-cities {
+    overflow: hidden !important;
+    .select-box {
+      max-width: 40% !important ;
+      // max-width: 147px !important ;
+    }
+  }
+  .labels {
+    & p {
+      width: 40% !important;
+      margin-right: 15px;
+    }
+  }
+}
